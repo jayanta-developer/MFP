@@ -4,14 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve"
+    "start": "webpack serve --config config/webpack.dev.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/plugin-transform-runtime": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^10.0.0",
     "html-webpack-plugin": "^4.5.2",
     "nodemon": "^3.1.9",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
     "webpack": "^5.98.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^3.11.0"

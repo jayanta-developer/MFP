@@ -1,16 +1,22 @@
 import React from "react";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 //Images
 import { Images } from "../../public/assets/Images";
 
 export default function Pricing() {
+  const Navigate = useNavigate();
+
   const cardData = [1, 1];
 
   return (
     <>
       <div className="sectionBox">
         <h1>Pricing Sectino</h1>
+        <button onClick={() => Navigate("/landing")}>
+          Back to Landing section
+        </button>
         <p>
           A paragraph is a distinct unit of writing, typically composed of
           multiple sentences, that focuses on a single idea or topic. It serves
@@ -34,7 +40,7 @@ export default function Pricing() {
             <div key={i} className="productCard">
               <img src={Images.CardImg} />
               <p>$ 354</p>
-              <button>Buy Now</button>
+              <button>Check Out</button>
               <samp>
                 {" "}
                 here’s a quick outline of how your container and remote apps

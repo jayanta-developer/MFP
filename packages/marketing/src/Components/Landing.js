@@ -1,18 +1,20 @@
 import React from "react";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 //Images
 import { Images } from "../../public/assets/Images";
 
 export default function Landing() {
   const cardData = [1, 1, 1, 1, 1, 1];
+  const Navigate = useNavigate();
 
   return (
     <>
       <div className="sectionBox">
         <h1>Home sectino</h1>
 
-        <button>Pricing section</button>
+        
         <p>
           Great! If you're setting up a micro frontend architecture (using
           something like Webpack Module Federation), here’s a quick outline of
@@ -36,6 +38,7 @@ export default function Landing() {
                 should be structured — let me know if you'd like the complete
                 setup
               </samp>
+              <button onClick={() => Navigate("/pricing")}>Buy Now</button>
             </div>
           ))}
         </div>

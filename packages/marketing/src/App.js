@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, BrowserRouter, Router } from "react-router-dom";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 
 //components
 import Pricing from "./Components/Pricing";
@@ -8,12 +8,10 @@ import Landing from "./Components/Landing";
 const App = () => {
   return (
     <>
-      <BrowserRouter>
-        <Switch>
-          <Route path="/landing" element={<Landing />} />
-          <Route path="/pricing" element={<Pricing />} />
-        </Switch>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/landing" element={<Landing />} />
+        <Route path="/pricing" element={<Pricing />} />
+      </Routes>
     </>
   );
 };

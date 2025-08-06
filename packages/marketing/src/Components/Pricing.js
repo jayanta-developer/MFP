@@ -14,9 +14,7 @@ export default function Pricing() {
     <>
       <div className="sectionBox">
         <h1>Pricing Sectino</h1>
-        <button onClick={() => Navigate("/landing")}>
-          Back to Landing section
-        </button>
+        <button onClick={() => Navigate("/")}>Back to Landing section</button>
         <p>
           A paragraph is a distinct unit of writing, typically composed of
           multiple sentences, that focuses on a single idea or topic. It serves

@@ -1,7 +1,7 @@
 import React from "react";
 
 //components
-import MarketingApp from "./Container/MarketingApp";
+import MarketingApp from "./Components/MarketingApp";
 
 const App = () => {
   return (
